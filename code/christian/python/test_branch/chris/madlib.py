@@ -14,7 +14,7 @@ adjective = input('Enter an adjective: ')
 adverb = input('Enter an adverb: ')
 body_part = input('Name a body part: ')
 
-print(f'''\nTHE BEST STORY EVER TOLD:\n
+print(f'''\nTHE \"BEST\" STORY EVER TOLD:\n
 Long ago, in a galaxy far far away.... lived a {noun}!
 But this was no ordinary {noun}, this was one that could {verb}.
 And so the {adjective} {noun} made sure to {verb} {adverb} as best as it could!
@@ -23,40 +23,50 @@ And so the {adjective} {noun} made sure to {verb} {adverb} as best as it could!
 ***Your credit card will now be charged $1M for use of this MadLib app.***
 ''')
 
-# !!!!!!!!VERSION 2 IS FAR FROM COMPLETE - BELOW IS MOSTLY NOTES - CODE WILL NOT WORK!!!!!!!!!!!!!!!!!!!
+# ----------------------------------------------------------------------------#
+
 # Version 2
 # Make a functional solution that utilizes lists. 
 # For example, ask the user for 3 adjectives, separated by commas, 
 # then use the .split() function to store each adjective and later use it in your story.
 
 # Add randomness! Use the random module, rather than selecting which 
-# adjective goes where in the story.
 
-# import random
+import random
 
-# adjective_list = []
-# randomized_adjective_order = []
+print('''
+===Welcome to MadLibs===
+-------Version II-------
+''')
 
-# print('''
-# ===Welcome to MadLibs===
-# -------Version II-------
-# ''')
+adjectives = input('''Enter 3 adjectives separated by commas.
+Ex: adjective,adjective,adjective
 
-# adjectives = input('''Enter 3 adjectives separated by commas.
-# Ex: adjective, adjective, adjective
-# Enter here: ''')
+Enter here: ''')
 
-# adjectives.split(', ')
-# adjective_list.append(adjectives)
+adjectives_list = adjectives.split(',')
+number = random.randint(1, 3)
 
-# while True:
-#     if adjective_list is not []:
-#         adjective_placer = random.choice(adjective_list)
-#         randomized_adjective_order.append(adjective_placer)
-#     else:
-#         break
-    
-# print(f'''
-# The car was {randomized_adjective_order[0]}
-# and {randomized_adjective_order[1]} 
-# and {randomized_adjective_order[2]}.''')
+if number == 1:
+    place_1 = adjectives_list[0]
+    place_2 = adjectives_list[1]
+    place_3 = adjectives_list[2]
+elif number == 2:
+    place_1 = adjectives_list[2]
+    place_2 = adjectives_list[0]
+    place_3 = adjectives_list[1]
+elif number == 3:
+    place_1 = adjectives_list[1]
+    place_2 = adjectives_list[2]
+    place_3 = adjectives_list[0]
+
+print(f'''\nHave you ever seen a {place_1} dinosaur? Neither have I!
+Just imagine your face upon seeing such a sight!
+Yep, your face would probably be all {place_2} and what not.
+Anywho, I guess it's time to stop daydreaming and be a responsible dad...
+
+...wait... where did my {place_3} kids go???
+''')
+
+# ----------------------------------------------------------------------------#
+
