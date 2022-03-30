@@ -1,5 +1,0 @@
-name = input('please tell me your name: ')
-noun = input('what do you like to do?: ')
-adjective = input(f'describe in one word what you do when you play {noun}:  ')
-results = (f' my name is {name}, i like to {adjective} when playing {noun}. ')
-print (results)
