@@ -1,3 +1,5 @@
+### Part 1
+
 student_grade = input('Enter your score to receive your grade:')
 student_grade = (int(student_grade))
 print(type(student_grade))
@@ -17,7 +19,7 @@ elif student_grade >= 60 and student_grade <= 69:
 elif student_grade > 0 and student_grade <= 59:
     print('F')
 
-
+### Part 2
 
 # student_grade = input('Enter your score to receive your grade:')
 # student_grade = (int(student_grade))
@@ -65,4 +67,4 @@ elif student_grade > 0 and student_grade <= 59:
 #     print('F')
 
 # elif student_grade > 57 and student_grade <= 59:
-    print('F')
+#    print('F')
