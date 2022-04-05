@@ -165,15 +165,18 @@ for i in range(100):
 ```
 > 0 1 2 3 4 5
 
-This is particularly useful when you need tighter control over when a loop terminates, and can use an infinite loop (`while True`) with a `break`.
+This is particularly useful when you need tighter control over when a loop terminates, and can use an infinite loop (`while True`) with a `break`. Let's take a look at this example with exceptions
 
 ```python
 nums = []
 while True:
     num = input('enter number: ')
+    try:
+        nums.append(int(num))
+    except:
+        print('enter a number')
     if num == 'done':
-        break
-    nums.append(int(num))
+        break 
 print(nums)
 ```
 
