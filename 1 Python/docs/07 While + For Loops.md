@@ -169,14 +169,16 @@ This is particularly useful when you need tighter control over when a loop termi
 
 ```python
 nums = []
+
 while True:
-    num = input('enter number: ')
+    num = input('enter a number ')
     try:
-        nums.append(int(num))
+        result = int(num)
+        nums.append(result)
     except:
-        print('enter a number')
-    if num == 'done':
-        break 
+        print('number entered is invalid')
+    if num=='done':
+        break
 print(nums)
 ```
 
