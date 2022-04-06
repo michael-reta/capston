@@ -19,6 +19,8 @@ elif student_grade >= 60 and student_grade <= 69:
 elif student_grade > 0 and student_grade <= 59:
     print('F')
 
+print('testing with Alex')
+
 ### Part 2
 
 # student_grade = input('Enter your score to receive your grade:')
