@@ -11,7 +11,7 @@
 def double_numbers(nums):
     new_list = []
     for num in nums:
-        new_list.append(num**2)
+        new_list.append(num*2)
     return new_list
 
 def test_double_numbers():
