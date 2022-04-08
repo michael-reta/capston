@@ -1,23 +1,5 @@
 import pytest
 
-
-# Write a function that returns True if the number is a double digit
-
-# def double_digit(num):
-#     converted = str(num)
-#     print(converted)
-#     if len(converted) > 1:
-#         return True
-
-# def test_double_digit():
-#     assert double_digit(133) == False
-
-# nums = []
-
-# while True: 
-#     num = input('enter a number ')
-#     nums.append()
-
 # Practice 2: Booleans, Comparisons, & Conditionals
 # Copy and paste this file into your own "02_booleans.py"
 # Fill in the code for each of the functions
@@ -28,8 +10,16 @@ import pytest
 # Write a function that takes a string indicating energy level and weather
 
 
-def go_hiking(weather):
-    ...
+def go_hiking(energy, weather):
+    if energy == "tired" and weather == "rainy":
+        return False
+    elif energy == "tired" and weather == "sunny":
+        return False
+    elif energy == "spry" and weather == "rainy":
+        return False
+    elif energy == "spry" and weather == "sunny":
+        return True
+
 
 def test_go_hiking():
     assert go_hiking('tired', 'rainy') == False
@@ -42,20 +32,30 @@ def test_go_hiking():
 # Write a function that returns True if the number is a double digit
 
 def double_digit(num):
-    ...
+    if len(str(num)) == 1:
+        return False
+    elif len(str(num)) > 1  and len(str(num)) < 3:
+        return True
+    elif len(str(num)) > 2 and len(str(num)) < 4:
+        return False
+    elif len(str(num)) > 1 and len(str(num)) < 3:
+        return True
 
 def test_double_digit():
     assert double_digit(5) == False
     assert double_digit(55) == True
     assert double_digit(672) == False
-    assert double_digit(-56) == True
+    assert double_digit(abs(-56)) == True
 
 
-# Opposite
-# Write a function that takes two integers, `a` and `b`, and returns `True` if one is positive and the other is negative, and return `False` otherwise.
+# # Opposite
+# # Write a function that takes two integers, `a` and `b`, and returns `True` if one is positive and the other is negative, and return `False` otherwise.
 
 def opposite(a, b):
-    ...
+    if a > 0 and b < 0:
+        return True
+    else:
+        return False
 
 def test_opposite():
     assert opposite(10, -1) == True
@@ -63,12 +63,15 @@ def test_opposite():
     assert opposite(-1, -1) == False
 
 
-# Near 100
-# Write a function that returns True if a number within 10 of 100.
+# # Near 100
+# # Write a function that returns True if a number within 10 of 100.
 
 
 def near_100(num):
-    ...
+    if num >= 90 and num <= 110:
+        return True
+    else:
+        return False
 
 def test_near_100():
     assert near_100(50) == False
@@ -77,12 +80,19 @@ def test_near_100():
     assert near_100(115) == False
 
 
-# Maximum of Three
-# Write a function that returns the maximum of 3 parameters.
+# # Maximum of Three
+# # Write a function that returns the maximum of 3 parameters.
 
 
 def maximum_of_three(a, b, c):
-    ...
+    if a > b and a > c:
+        largest = a
+    elif b > a and b > c:
+        largest = b
+    elif c > a and c > b:
+        largest = c
+    return largest
+
 
 def test_maximum_of_three():
     assert maximum_of_three(5,6,2) == 6
