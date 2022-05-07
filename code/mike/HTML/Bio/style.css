@@ -1,0 +1,138 @@
+/* if using class selector use .(selector)
+if using id selector use #(selector) */
+
+
+body{
+
+    align-content: center;
+    margin: 25px;
+    position: relative;
+    background-image: url(https://media.istockphoto.com/photos/dark-black-and-blue-grungy-wall-background-for-display-or-montage-of-picture-id1150477705?b=1&k=20&m=1150477705&s=612x612&w=0&h=4AOZ_RTNTu4AJ6giv0c6_j1KYiOxRC7ZyWHBpfppkMw=);
+    background-position: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+header{
+    align-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+img{
+  border: 10px solid rgb(84, 143, 226, .75);
+  border-radius: 25px;
+  padding: 10px;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+h1{
+  text-align: center;
+}
+
+  .joke{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    text-align: center;
+}
+
+.caption{
+    display: block;
+    text-align: center;
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 110%; */
+    font-style: italic;
+}
+
+main{
+
+    background-color: rgb(84, 143, 226, .5);
+    border-radius: 15px;
+    /* margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 110px; */
+
+}
+
+
+.wrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+    /* margin-bottom: 100px; */
+    display: grid;
+    grid-template-columns: 500px 2fr;
+    grid-auto-rows: minmax(175px, auto);
+  }
+  
+  .box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+  }
+  
+  .box2 {
+    grid-column-start: 3;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: left;
+  }
+
+  @counter-style thumbs {
+    system:cyclic;
+    symbols:' \203D';
+    suffix: " ";
+  }
+   
+
+ul{
+  list-style-type: thumbs;
+}
+
+  .box3 {
+    grid-column-start: 1;
+    grid-column-end:5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+  }
+
+   .box4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+
+  }
+
+
+.links{
+    display: flex;
+    /* justify-content: flex-start; */
+    justify-content: center;
+    text-align: center !important;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+}
+
+
+.imdb{
+  padding-right: 25px;
+}
+
+.wiki{
+  padding-left: 25px;
+}
