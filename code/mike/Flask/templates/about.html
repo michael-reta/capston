@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %} 
+
+
+<select class="custom-select custom-select-lg mb-3">
+    <option selected>Open this select menu</option>
+    {%for option in options%}
+    <option value="{{option}}">{{option}}</option>
+    {%endfor%}
+
+</select>
+
+
+
+
+
+{% endblock %}

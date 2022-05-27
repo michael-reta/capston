@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+{% block content %} 
+
+<form action="/" method="POST">
+<!-- Name input -->
+    <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="First & Last" name="first_last">
+  </div>
+
+
+<!-- Order in or Takeout -->
+<p>Here or To Go</p>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="I'll eat it here" id="flexCheckDefault" name="here_go">
+    <label class="form-check-label" for="flexCheckDefault">
+      I'll eat it here
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Gotta Run" id="flexCheckDefault" name="here_go">
+    <label class="form-check-label" for="flexCheckDefault">
+      Gotta Run
+    </label>
+  </div>
+<br>
+
+
+<!-- Tortilla Selection -->
+<p class="tortilla">Choose Your Tortilla</p>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="tortilla_flavor" value="Flour" id="flour" checked>
+    <label class="form-check-label" for="flour">
+      Flour
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="tortilla_flavor" value="Wheat" id="wheat">
+    <label class="form-check-label" for="wheat">
+      Wheat
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="tortilla_flavor" value="Spinach" id="spinach">
+    <label class="form-check-label" for="spinach">
+      Spinach
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="tortilla_flavor" value="Corn(GF)" id="corn">
+    <label class="form-check-label" for="corn">
+      Corn (Gluten Free)
+    </label>
+  </div>
+
+<br>
+
+
+<!-- Rice Selection -->
+<p class="rice">White or Brown Rice</p>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="rice_flavor" id="white" value="White" checked>
+    <label class="form-check-label" for="white">
+      White
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="rice_flavor" id="brown" value="Brown">
+    <label class="form-check-label" for="brown">
+      Brown
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="rice_flavor" id="no_rice" value="No Rice">
+    <label class="form-check-label" for="no_rice">
+      No Rice
+    </label>
+  </div>
+
+<br>
+
+
+<!-- To Bean or Not to Bean that is the question... -->
+<p class="beans">Beans</p>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="bean_flavor" id="black" value="Black" checked>
+    <label class="form-check-label" for="black">
+      Black
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="bean_flavor" id="pinto" value="Pinto">
+    <label class="form-check-label" for="pinto">
+      Pinto
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="bean_flavor" id="no_beans" value="No Beans">
+    <label class="form-check-label" for="no_beans">
+      No Beans
+    </label>
+  </div>
+
+<br>
+
+
+<!-- Protein Selection -->
+<p class="protein">Choose Your Protein</p>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="protein_flavor" id="carnitas"  value="Carnitas" checked>
+    <label class="form-check-label" for="carnitas">
+      Carnitas
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="protein_flavor" id="chicken" value="Chicken">
+    <label class="form-check-label" for="chicken">
+      Chicken
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="protein_flavor" id="sofritas" value="Sofritas">
+    <label class="form-check-label" for="sofritas">
+      Sofritas
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="protein_flavor" id="no_protein" value="No Protein">
+    <label class="form-check-label" for="no_protein">
+      No Protein
+    </label>
+  </div>
+<br>
+
+
+<!-- Extras Selection -->
+<p class="extras">Extras</p>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Cheese" id="flexCheckDefault" name="extras">
+    <label class="form-check-label" for="flexCheckDefault">
+      Cheese
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Sour Cream" id="flexCheckDefault" name="extras">
+    <label class="form-check-label" for="flexCheckDefault">
+      Sour Cream
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Guacamole" id="flexCheckDefault" name="extras">
+    <label class="form-check-label" for="flexCheckDefault">
+      Guacamole
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Pico de Gallo" id="flexCheckDefault" name="extras">
+    <label class="form-check-label" for="flexCheckDefault">
+      Pico de Gallo
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Fajita Veggies" id="flexCheckDefault" name="extras">
+    <label class="form-check-label" for="flexCheckDefault">
+      Fajita Veggies
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Corn Salsa" id="flexCheckDefault" name="extras">
+    <label class="form-check-label" for="flexCheckDefault">
+      Corn Salsa
+    </label>
+  </div>
+
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<br>
+<p>Mmmmm...this burrito sounds tasty!</p>
+<ul>
+    <li>{{from_textbar}}</li>
+    <li>{{here_go}}</li>
+    <li>{{tortilla_flavor}}</li>
+    <li>{{rice_flavor}}</li>
+    <li>{{bean_flavor}}</li>
+    <li>{{protein_flavor}}</li>
+    <li>{%for extra in extras%}
+        
+    </li>
+</ul>
+
+
+{% endblock %}
