@@ -1,0 +1,15 @@
+.list{}
+.list li{
+    display:flex;
+}
+
+.list li.completed span{
+    text-decoration: line-through;
+}
+
+.list li span{
+
+}
+.list li button{
+    margin-left:8px;
+}
