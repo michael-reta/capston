@@ -22,7 +22,7 @@ header{
 }
 
 img{
-  border: 10px solid rgb(84, 143, 226, .75);
+  border: 10px solid rgba(84, 143, 226, .75);
   border-radius: 25px;
   padding: 10px;
 
